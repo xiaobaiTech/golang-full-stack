@@ -44,11 +44,10 @@ export default hopeTheme({
     comment: {
       provider: "Giscus",
       repo: "xiaobaiTech/Newbie-learning-python",
-      repoId: "R_kgDOKcSB1g",
+      repoId: "R_kgDOKcTHvw",
       category: "Announcements",
-      categoryId: "DIC_kwDOKcSB1s4CZ4eC",
+      categoryId: "DIC_kwDOKcTHv84CZ4fp",
     },
-
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
