@@ -6,13 +6,13 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "小白debug",
+    name: "Golang全栈程序员",
     url: "https://xiaobaidebug.top/",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "/python_logo.png",
+  logo: "/new_logo.png",
 
   repo: "xiaobaiTech/Newbie-learning-python",
 
@@ -68,7 +68,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+      revealJs: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",

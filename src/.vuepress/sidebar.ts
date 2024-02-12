@@ -1,12 +1,22 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/": [
+  "/python/": [
     {
-      text: "小白0基础入门Python",
+      text: "python知识体系",
       icon: "laptop-code",
-      prefix: "python/",
+
       link: "python/",
+      children: "structure",
+    },
+
+  ],
+  "/golang/": [
+    {
+      text: "golang知识体系",
+      icon: "laptop-code",
+
+      link: "golang/",
       children: "structure",
     },
   ],
