@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-docs-demo.netlify.app/Newbie-learning-python/sitemap.xml
+Sitemap: https://vuepress-theme-hope-docs-demo.netlify.app/sitemap.xml
