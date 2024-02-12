@@ -29,4 +29,9 @@ export default navbar([
     icon: "book",
     link: "https://xiaobaidebug.top/",
   },
+  {
+    text: "blog",
+    icon: "blog",
+    link: "https://golangguide.top/sitemap.xml",
+  },
 ]);
