@@ -30,7 +30,7 @@ export default navbar([
     link: "https://xiaobaidebug.top/",
   },
   {
-    text: "blog",
+    text: "sitemap",
     icon: "blog",
     link: "https://golangguide.top/sitemap.xml",
   },
