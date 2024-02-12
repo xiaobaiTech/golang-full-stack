@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/new_logo.png",
 
-  repo: "xiaobaiTech/Newbie-learning-python",
+  repo: "xiaobaiTech/golang-full-stack",
 
   docsDir: "src",
 
@@ -43,7 +43,7 @@ export default hopeTheme({
     // You should generate and use your own comment service
     comment: {
       provider: "Giscus",
-      repo: "xiaobaiTech/Newbie-learning-python",
+      repo: "xiaobaiTech/golang-full-stack",
       repoId: "R_kgDOKcTHvw",
       category: "Announcements",
       categoryId: "DIC_kwDOKcTHv84CZ4fp",
