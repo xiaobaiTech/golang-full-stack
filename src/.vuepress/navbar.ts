@@ -4,7 +4,10 @@ export default navbar([
   "/",
   "/python/",
   "/golang/",
-
+  "/训练营/",
+  "/计算机基础/",
+  "/架构/",
+  "/中间件/",
   // {
   //   text: "指南",
   //   icon: "lightbulb",

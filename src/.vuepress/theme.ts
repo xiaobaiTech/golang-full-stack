@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: "https://golangguide.top",
 
   author: {
-    name: "Golang全栈程序员",
+    name: "小白debug",
     url: "https://xiaobaidebug.top/",
   },
 

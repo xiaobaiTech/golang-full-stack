@@ -1,0 +1,322 @@
+# **Go 入门面试题**
+
+## 与其他语言相比，使用 Go 有什么好处？
+
+- 与其他作为学术实验开始的语言不同，Go 代码的设计是务实的。每个功能和语法决策都旨在让程序员的生活更轻松。
+- Golang 针对并发进行了优化，并且在规模上运行良好。
+- 由于单一的标准代码格式，Golang 通常被认为比其他语言更具可读性。
+- 自动垃圾收集明显比 Java 或 Python 更有效，因为它与程序同时执行。
+
+## Golang 使用什么数据类型？
+
+Golang 使用以下类型：
+
+- Method 
+- Boolean 
+- Numeric 
+- String 
+- Array 
+- Slice 
+- Struct 
+- Pointer 
+- Function 
+- Interface 
+- Map 
+- Channel 
+
+
+
+
+## Golang开发新手常犯的50个错误
+
+https://blog.csdn.net/gezhonglei2007/article/details/52237582
+
+
+
+## 关于整型切片的初始化，下面正确的是？
+
+A. s := make([]int)
+
+B. s := make([]int, 0)
+
+C. s := make([]int, 5, 10)
+
+D. s := []int{1, 2, 3, 4, 5}
+
+答案
+
+> B C D
+
+## 下列代码是否会触发异常？
+
+```go
+func Test59(t *testing.T) {
+    runtime.GOMAXPROCS(1)
+    intChan := make(chan int, 1)
+    stringChan := make(chan string, 1)
+    intChan <- 1
+    stringChan <- "hello"
+    select {
+    case value := <-intChan:
+        fmt.Println(value)
+    case value := <-stringChan:
+        panic(value)
+    }
+}
+```
+
+答案
+
+> 不一定，当两个chan同时有值时，select 会随机选择一个可用通道做收发操作
+
+## 关于channel的特性，下面说法正确的是？
+
+A. 给一个 nil channel 发送数据，造成永远阻塞
+
+B. 从一个 nil channel 接收数据，造成永远阻塞
+
+C. 给一个已经关闭的 channel 发送数据，引起 panic
+
+D. 从一个已经关闭的 channel 接收数据，如果缓冲区中为空，则返回一个零值
+
+答案
+
+> A B C D
+
+## 下列代码有什么问题？
+
+```go
+const i = 100
+var j = 123
+
+func main() {
+    fmt.Println(&j, j)
+    fmt.Println(&i, i)
+}
+```
+
+答案
+
+> Go语言中，常量无法寻址, 是不能进行取指针操作的
+
+## 下列代码输出什么？
+
+```go
+func Test62(t *testing.T) {
+    x := []string{"a", "b", "c"}
+    for v := range x {
+        fmt.Print(v)
+    }
+}
+```
+
+答案
+
+> 012
+>
+> range 一个返回值时，这个值是下标，两个值时，第一个是下标，第二个是值，当 x 为 map时，第一个是key，第二个是value
+
+## 关于无缓冲和有冲突的channel，下面说法正确的是？
+
+A. 无缓冲的channel是默认的缓冲为1的channel；
+
+B. 无缓冲的channel和有缓冲的channel都是同步的；
+
+C. 无缓冲的channel和有缓冲的channel都是非同步的；
+
+D. 无缓冲的channel是同步的，而有缓冲的channel是非同步的；
+
+答案
+
+> D
+
+## 下列代码输出什么？
+
+```go
+func Foo(x interface{}) {
+    if x == nil {
+        fmt.Println("empty interface")
+        return
+    }
+    fmt.Println("non-empty interface")
+}
+func Test64(t *testing.T) {
+    var x *int = nil
+    Foo(x)
+}
+```
+
+答案
+
+> non-empty interface
+>
+> 接口除了有静态类型，还有动态类型和动态值，
+> 当且仅当动态值和动态类型都为 nil 时，接口类型值才为 nil。
+> 这里的 x 的动态类型是 *int，所以 x 不为 nil
+
+## 关于select机制，下面说法正确的是?
+
+A. select机制用来处理异步IO问题；
+
+B. select机制最大的一条限制就是每个case语句里必须是一个IO操作；
+
+C. golang在语言级别支持select关键字；
+
+D. select关键字的用法与switch语句非常类似，后面要带判断条件；
+
+答案
+
+> A B C 
+
+
+
+## Go 程序中的包是什么？
+
+包(pkg)是 Go 工作区中包含 Go 源文件或其他包的目录。源文件中的每个函数、变量和类型都存储在链接包中。每个 Go 源文件都属于一个包，该包在文件顶部使用以下命令声明：
+
+```go
+package <packagename>
+```
+
+
+
+您可以使用以下方法导入和导出包以重用导出的函数或类型：
+
+```go
+import <packagename>
+```
+
+
+
+Golang 的标准包是 fmt，其中包含格式化和打印功能，如 Println().
+
+
+
+## 关于字符串拼接,下列正确的是?
+
+A. str := 'abc' + '123'
+
+B. str := "abc" + "123"
+
+C. str ：= '123' + "abc"
+
+D. fmt.Sprintf("abc%d", 123)
+
+答案
+
+> B D 双引号用来表示字符串 string，其实质是一个 byte 类型的数组，单引号表示 rune 类型。
+
+
+
+
+## 连nil切片和空切片一不一样都不清楚？那BAT面试官只好让你回去等通知了。
+
+ https://mp.weixin.qq.com/s/sW4PD1MiaunURNDIU4BbQQ 
+
+
+
+## golang面试题：字符串转成byte数组，会发生内存拷贝吗？
+
+ https://mp.weixin.qq.com/s/qmlPuGVISx8NYp2b9LrqnA 
+
+
+
+## golang面试题：翻转含有中文、数字、英文字母的字符串
+
+ https://mp.weixin.qq.com/s/ssinnUM22PHPWRug8EzAkg 
+
+
+
+## golang面试题：拷贝大切片一定比小切片代价大吗？
+
+ https://mp.weixin.qq.com/s/8Dp2eCYzDdBbxAG5-jNevQ 
+
+
+
+## golang面试题：json包变量不加tag会怎么样？
+
+ https://mp.weixin.qq.com/s/bZlKV_BWSqc-qCa4DrsCbg 
+
+
+
+## golang面试题：reflect（反射包）如何获取字段tag？为什么json包不能导出私有变量的tag？
+
+ https://mp.weixin.qq.com/s/P7TEx2mInwEktXTEE6JDWQ 
+
+
+
+## 昨天那个在for循环里append元素的同事，今天还在么？
+
+ https://mp.weixin.qq.com/s/SHxcspmiKyPwPBbhfVxsGA 
+
+
+
+
+
+## go struct能不能比较
+
+- 相同struct类型的可以比较
+- 不同struct类型的不可以比较,编译都不过，类型不匹配
+
+```
+package main
+import "fmt"
+func main() {
+    type A struct {
+        a int
+    }
+    type B struct {
+        a int
+    }
+    a := A{1}
+    //b := A{1}
+    b := B{1}
+    if a == b {
+        fmt.Println("a == b")
+    }else{
+        fmt.Println("a != b")
+    }
+} 
+// output
+// command-line-arguments [command-line-arguments.test]
+// ./.go:14:7: invalid operation: a == b (mismatched types A and B) 
+```
+
+
+
+## Go 支持什么形式的类型转换？将整数转换为浮点数。
+
+Go 支持显式类型转换以满足其严格的类型要求。
+
+```go
+i := 55 //int
+
+j := 67.8 //float64
+
+sum := i + int(j)//j is converted to int
+```
+
+
+
+## Log包线程安全吗？
+
+Golang的标准库提供了log的机制，但是该模块的功能较为简单（看似简单，其实他有他的设计思路）。在输出的位置做了线程安全的保护。
+
+## Goroutine和线程的区别?
+
+从调度上看，goroutine的调度开销远远小于线程调度开销。
+
+OS的线程由OS内核调度，每隔几毫秒，一个硬件时钟中断发到CPU，CPU调用一个调度器内核函数。这个函数暂停当前正在运行的线程，把他的寄存器信息保存到内存中，查看线程列表并决定接下来运行哪一个线程，再从内存中恢复线程的注册表信息，最后继续执行选中的线程。这种线程切换需要一个完整的上下文切换：即保存一个线程的状态到内存，再恢复另外一个线程的状态，最后更新调度器的数据结构。某种意义上，这种操作还是很慢的。
+
+Go运行的时候包涵一个自己的调度器，这个调度器使用一个称为一个M:N调度技术，m个goroutine到n个os线程（可以用GOMAXPROCS来控制n的数量），Go的调度器不是由硬件时钟来定期触发的，而是由特定的go语言结构来触发的，他不需要切换到内核语境，所以调度一个goroutine比调度一个线程的成本低很多。
+
+从栈空间上，goroutine的栈空间更加动态灵活。
+
+每个OS的线程都有一个固定大小的栈内存，通常是2MB，栈内存用于保存在其他函数调用期间哪些正在执行或者临时暂停的函数的局部变量。这个固定的栈大小，如果对于goroutine来说，可能是一种巨大的浪费。作为对比goroutine在生命周期开始只有一个很小的栈，典型情况是2KB, 在go程序中，一次创建十万左右的goroutine也不罕见（2KB*100,000=200MB）。而且goroutine的栈不是固定大小，它可以按需增大和缩小，最大限制可以到1GB。
+
+goroutine没有一个特定的标识。
+
+在大部分支持多线程的操作系统和编程语言中，线程有一个独特的标识，通常是一个整数或者指针，这个特性可以让我们构建一个线程的局部存储，本质是一个全局的map，以线程的标识作为键，这样每个线程可以独立使用这个map存储和获取值，不受其他线程干扰。
+
+goroutine中没有可供程序员访问的标识，原因是一种纯函数的理念，不希望滥用线程局部存储导致一个不健康的超距作用，即函数的行为不仅取决于它的参数，还取决于运行它的线程标识。
+
