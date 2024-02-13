@@ -33,7 +33,7 @@ highlights:
       - title: 前字节跳动高级研发工程师。
       - title: 全网10w+粉丝博主。
 
-  - header: golang知识图谱
+  - header: 网站特色
     image: /assets/image/poetry.png
     bgImageStyle:
       background-repeat: repeat
@@ -42,18 +42,18 @@ highlights:
       - title: 全面而系统的知识整理
         icon: clipboard-check
         details: 语法、标准库、最佳实践、常见问题
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/others.html#link-check
+        link: /golang/学习路线
         
 
-      - title: 实时更新和社区贡献
+      - title: 时下最新的架构知识
         icon: box-archive
-        details: 定期更新内容，及时反映Golang生态的最新发展。
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/container.html
+        details: 定期更新架构知识内容，及时反映Golang生态的最新发展。
+        link: /架构/
 
-      - title: 深入浅出的教程和指南
+      - title: 丰富全面的中间件知识点
         icon: table-columns
-        details: 从基础入门开始，逐步介绍Golang的各个方面
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/tabs.html
+        details: 从基础入门开始，逐步介绍Golang开发常接触的各个中间件的各个方面
+        link: /中间件/
 
 copyright: false
 footer: 版权所有 © 2019-present Golang全栈程序员，关注公众号【小白debug】回复【面试】获取最全面试pdf
