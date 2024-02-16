@@ -89,6 +89,30 @@ export default hopeTheme({
       vuePlayground: true,
     },
 
+    components: {
+      components: ["Badge", "BiliBili"],
+      rootComponents: {
+        notice: [
+          {
+            path: "/",
+            title: "通知",
+            content: "关注公众号【小白debug】\n  回复【面试】获取最全面试pdf",
+            fullscreen: false,
+            showOnce: false,
+          },
+        ],
+      },
+    },
+
+
+    feed: {
+      rss: true,
+    },
+
+    sitemap: {
+      changefreq: "weekly",
+    },
+
     // uncomment these if you want a pwa
     // pwa: {
     //   favicon: "/favicon.ico",

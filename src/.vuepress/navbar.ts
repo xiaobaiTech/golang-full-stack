@@ -3,30 +3,153 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/python/",
-  "/golang/",
-  "/训练营/",
-  "/计算机基础/",
-  "/架构/",
-  "/中间件/",
   // {
-  //   text: "指南",
-  //   icon: "lightbulb",
-  //   prefix: "/guide/",
-  //   children: [
+  //   text: 'Golang',
+  //   // 这里是下拉列表展现形式。
+  //   items: [
   //     {
-  //       text: "Bar",
-  //       icon: "lightbulb",
-  //       prefix: "bar/",
-  //       children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
-  //     },
-  //     {
-  //       text: "Foo",
-  //       icon: "lightbulb",
-  //       prefix: "foo/",
-  //       children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
-  //     },
-  //   ],
+  //       text: '学习路线',
+  //       link: '/golang/学习路线'
+  //     }, {
+  //       text: '基础面试题',
+  //       link: '/golang/面试题/1.Go入门'
+  //     },{
+  //       text: '进阶面试题',
+  //       link: '/golang/面试题/2.Go进阶'
+  //     }
+  //   ]
   // },
+  {
+    text: "训练营",
+    icon: "campground",
+    prefix: "/训练营/",
+    children: [
+      {
+        text: "介绍",
+        icon: "address-card",
+        link: '/训练营/介绍'
+      },
+      {
+        text: "入营须知",
+        icon: "brain",
+        link: '/训练营/入营须知'
+      },
+    ],
+  },
+  {
+    text: "计算机基础",
+    icon: "computer",
+    prefix: "/计算机基础/",
+    children: [
+      {
+        text: "操作系统",
+        icon: "server",
+        link: '/计算机基础/操作系统/'
+      },
+    ],
+  },
+  {
+    text: "架构",
+    icon: "folder-tree",
+    prefix: "/架构/",
+    children: [
+      {
+        text: "Docker",
+        icon: "box",
+        link: '/架构/Docker/'
+      },
+      {
+        text: "分布式",
+        icon: "manat-sign",
+        link: '/架构/分布式/'
+      },
+      {
+        text: "微服务",
+        icon: "microchip",
+        link: '/架构/微服务/'
+      },
+      {
+        text: "运维",
+        icon: "folder-open",
+        link: '/架构/运维/'
+      },
+    ],
+  },
+  {
+    text: "中间件",
+    icon: "align-center",
+    prefix: "/中间件/",
+    children: [
+      {
+        text: "ES",
+        icon: "magnifying-glass",
+        link: '/中间件/es/'
+      },
+      {
+        text: "Kafka",
+        icon: "chess-queen",
+        link: '/中间件/kafka/'
+      },
+      {
+        text: "Memcached",
+        icon: "suitcase",
+        link: '/中间件/Memcached/'
+      },
+      {
+        text: "Mongodb",
+        icon: "vr-cardboard",
+        link: '/中间件/mongodb/'
+      },
+      {
+        text: "Mysql",
+        icon: "database",
+        link: '/中间件/mysql/'
+      },
+      {
+        text: "Nginx",
+        icon: "network-wired",
+        link: '/中间件/nginx/'
+      },
+      {
+        text: "RabbitMQ",
+        icon: "frog",
+        link: '/中间件/RabbitMQ/'
+      },
+      {
+        text: "Redis",
+        icon: "registered",
+        link: '/中间件/Redis/'
+      },
+      {
+        text: "RocketMQ",
+        icon: "rocket",
+        link: '/中间件/RocketMQ/'
+      },
+    ],
+  },
+  {
+    text: "Golang",
+    icon: "lightbulb",
+    prefix: "/golang/",
+    children: [
+      {
+        text: "学习路线",
+        icon: "map-location-dot",
+        prefix: "学习路线",
+        link: '/golang/学习路线'
+      },
+      {
+        text: "基础面试题",
+        icon: "disease",
+        link: '/golang/面试题/1.Go入门'
+      },
+      {
+        text: "进阶面试题",
+        icon: "clipboard-question",
+        link: '/golang/面试题/2.Go进阶'
+      }
+    ],
+  },
   {
     text: "blog",
     icon: "book",
