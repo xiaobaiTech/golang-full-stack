@@ -113,17 +113,17 @@ export default navbar([
       {
         text: "RabbitMQ",
         icon: "frog",
-        link: '/中间件/RabbitMQ/'
+        link: '/中间件/rabbitmq/'
       },
       {
         text: "Redis",
         icon: "registered",
-        link: '/中间件/Redis/'
+        link: '/中间件/redis/'
       },
       {
         text: "RocketMQ",
         icon: "rocket",
-        link: '/中间件/RocketMQ/'
+        link: '/中间件/rocketmq/'
       },
     ],
   },
