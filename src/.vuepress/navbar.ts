@@ -46,6 +46,11 @@ export default navbar([
         icon: "server",
         link: '/计算机基础/操作系统/'
       },
+      {
+        text: "网络基础",
+        icon: "wifi",
+        link: '/计算机基础/网络基础/'
+      },
     ],
   },
   {
