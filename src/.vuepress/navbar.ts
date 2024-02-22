@@ -144,6 +144,12 @@ export default navbar([
         link: '/golang/学习路线'
       },
       {
+        text: "常用包大全",
+        icon: "book",
+        prefix: "常用包大全",
+        link: '/golang/常用包大全'
+      },
+      {
         text: "基础面试题",
         icon: "disease",
         link: '/golang/面试题/1.Go入门'

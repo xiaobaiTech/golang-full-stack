@@ -4,7 +4,7 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://golangguide.top",
-
+  globalLayout: './theme/layouts/GlobalzLayout.vue',
   author: {
     name: "小白debug",
     url: "https://xiaobaidebug.top/",
@@ -88,7 +88,6 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
     components: {
       components: ["Badge", "BiliBili"],
       rootComponents: {
