@@ -101,6 +101,11 @@ export default navbar([
         link: '/中间件/Memcached/'
       },
       {
+        text: "ClickHouse",
+        icon: "house-laptop",
+        link: '/中间件/ClickHouse/'
+      },
+      {
         text: "Mongodb",
         icon: "vr-cardboard",
         link: '/中间件/mongodb/'
