@@ -186,7 +186,7 @@ TCP 连接每次都是三次握手。每次断开都要四次挥手。
 
 <br>
 
-> 插个题外话：这也解释了之前[这篇文章](https://mp.weixin.qq.com/s/T6XXaFFyyOJioD6dqDJpFg)里最后的疑问，为什么要强调是同一个域名：一个域名会建立一个连接，一个连接对应**一个读 goroutine 和一个写 goroutine**。正因为是同一个域名，所以最后才会泄漏`3`个 goroutine，如果不同域名的话，那就会泄漏 `1+2*N` 个协程，`N`就是域名数。
+> 插个题外话：这也解释了之前[这篇文章](https://golangguide.top/golang/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%BB%99%E5%A4%A7%E5%AE%B6%E4%B8%A2%E8%84%B8%E4%BA%86%EF%BC%8C%E7%94%A8%E4%BA%86%E4%B8%89%E5%B9%B4golang%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E6%B2%A1%E7%AD%94%E5%AF%B9%E8%BF%99%E9%81%93%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%A2%98.html)里最后的疑问，为什么要强调是同一个域名：一个域名会建立一个连接，一个连接对应**一个读 goroutine 和一个写 goroutine**。正因为是同一个域名，所以最后才会泄漏`3`个 goroutine，如果不同域名的话，那就会泄漏 `1+2*N` 个协程，`N`就是域名数。
 
 <br>
 
@@ -624,14 +624,13 @@ func netpolldeadlineimpl(pd *pollDesc, seq uintptr, read, write bool) {
 我是小白，我们下期见。
 
 ## 文章推荐：
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
 
-- [妙啊! 程序猿的第一本互联网黑话指南](https://mp.weixin.qq.com/s/btksE3RUxtioSYrYpChEeQ)
-- [程序员防猝死指南](https://mp.weixin.qq.com/s/PwIbKDTi0uSxhUWC56sJYg)
-- [我感觉，我可能要拿图灵奖了。。。](https://mp.weixin.qq.com/s/rLLfj883lJbWr21wHAJTJA)
-- [给大家丢脸了，用了三年 golang，我还是没答对这道内存泄漏题](https://mp.weixin.qq.com/s/T6XXaFFyyOJioD6dqDJpFg)
-- [硬核！漫画图解 HTTP 知识点+面试题](https://mp.weixin.qq.com/s/T41YBEmG4lkxokDLzRxVgA)
-- [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](https://mp.weixin.qq.com/s/PwIbKDTi0uSxhUWC56sJYg)
-- [硬核图解！30 张图带你搞懂！路由器，集线器，交换机，网桥，光猫有啥区别？](https://mp.weixin.qq.com/s/BJqp72EyEMahxi2XOfSrBQ)
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
 
 ##### 别说了，一起在知识的海洋里呛水吧
 

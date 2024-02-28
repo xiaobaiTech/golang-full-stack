@@ -262,11 +262,9 @@ IP 层会对大包进行切片，是不是也有粘包问题？
 
 # 文章推荐：
 
-- [给大家丢脸了，用了三年 golang，我还是没答对这道内存泄漏题](https://mp.weixin.qq.com/s/T6XXaFFyyOJioD6dqDJpFg)
-
 - [硬核！漫画图解 HTTP 知识点+面试题](https://mp.weixin.qq.com/s/T41YBEmG4lkxokDLzRxVgA)
 
-- [程序员防猝死指南](https://mp.weixin.qq.com/s/PwIbKDTi0uSxhUWC56sJYg)
+
 
 ##### 别说了，一起在知识的海洋里呛水吧
 

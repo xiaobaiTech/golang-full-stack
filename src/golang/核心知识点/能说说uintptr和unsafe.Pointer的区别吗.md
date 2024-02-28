@@ -125,11 +125,13 @@ $go build -gcflags=-m main.go
 
 ### 文章推荐：
 
-- [golang 面试题：简单聊聊内存逃逸？](https://mp.weixin.qq.com/s?__biz=MzAwMDAxNjU4Mg==&mid=2247483686&idx=1&sn=e48c51107191f02da5751a19a54f7d41&chksm=9aee288fad99a199c126d5ff735af7320356ce4bb5753ae59ac6231e596354499414b5705b79&token=2092782362&lang=zh_CN#rd)
-- [golang 面试题：字符串转成 byte 数组，会发生内存拷贝吗？](https://mp.weixin.qq.com/s?__biz=MzAwMDAxNjU4Mg==&mid=2247483669&idx=1&sn=88f754ddabc04eb3f66ba8ac37ee1461&chksm=9aee28bcad99a1aa1ada41cfccaffc7ef4719a9bc11c1bef45b7d1b5427c1faa12d8d0c3156f&token=2092782362&lang=zh_CN#rd)
-- [golang 面试题：翻转含有`中文、数字、英文字母`的字符串](https://mp.weixin.qq.com/s?__biz=MzAwMDAxNjU4Mg==&mid=2247483664&idx=1&sn=23a0cf8a78b1d9c30b2e3bc102bf421e&chksm=9aee28b9ad99a1af6c879ba4b1f6439e4c21c363f0a668f322c082ca334b62255507828f66d4&token=2092782362&lang=zh_CN#rd)
-- [golang 面试题：拷贝大切片一定比小切片代价大吗？](https://mp.weixin.qq.com/s?__biz=MzAwMDAxNjU4Mg==&mid=2247483674&idx=1&sn=ce4b5fee48c54ff69127ef2bd5d91427&chksm=9aee28b3ad99a1a57eed7651a16fd4bdc35ff23937e423c5e1322a234652fd135f1a16abbece&token=2092782362&lang=zh_CN#rd)
-- [golang 面试题：能说说 uintptr 和 unsafe.Pointer 的区别吗？](https://mp.weixin.qq.com/s?__biz=MzAwMDAxNjU4Mg==&mid=2247483679&idx=1&sn=7075859e59741b1d0a81dc472b8ce45f&chksm=9aee28b6ad99a1a0599416886660d9ea56bd7fec18841af0e5fe86c3daea3973732a83d7eabb&token=2092782362&lang=zh_CN#rd)
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
 
 关注公众号:【小白 debug】
 ![](https://cdn.xiaobaidebug.top/1696069689495.png)

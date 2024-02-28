@@ -262,19 +262,13 @@ func (es *bodyEOFSignal) condfn(err error) error {
 
 # 文章推荐：
 
-- [连 nil 切片和空切片一不一样都不清楚？那 BAT 面试官只好让你回去等通知了。](https://mp.weixin.qq.com/s/myGJ4TrEoVGqLAN3tbZHMw)
-- [昨天那个在 for 循环里 append 元素的同事，今天还在么？](https://mp.weixin.qq.com/s/SHxcspmiKyPwPBbhfVxsGA)
-- [golang 面试官：for select 时，如果通道已经关闭会怎么样？如果只有一个 case 呢？](https://mp.weixin.qq.com/s/lK6I353Iw08robqpmPB6-g)
-- [golang 面试官：for select 时，如果通道已经关闭会怎么样？如果只有一个 case 呢？](https://mp.weixin.qq.com/s/lK6I353Iw08robqpmPB6-g)
-- [golang 面试题：对已经关闭的的 chan 进行读写，会怎么样？为什么？](https://mp.weixin.qq.com/s/qm-8pvHBVRmLQQ4_DHc1Tw)
-- [golang 面试题：对未初始化的的 chan 进行读写，会怎么样？为什么？](https://mp.weixin.qq.com/s/ixJu0wrGXsCcGzveCqnr6A)
-- [golang 面试题：reflect（反射包）如何获取字段 tag？为什么 json 包不能导出私有变量的 tag？](https://mp.weixin.qq.com/s/WK9StkC3Jfy-o1dUqlo7Dg)
-- [golang 面试题：json 包变量不加 tag 会怎么样？](https://mp.weixin.qq.com/s/zZM_iLuopyenI0LD6VYZGw)
-- [golang 面试题：怎么避免内存逃逸？](https://mp.weixin.qq.com/s/4QAxGEr9KxtZXyfSG8VoCQ)
-- [golang 面试题：简单聊聊内存逃逸？](https://mp.weixin.qq.com/s/4YYR1eYFIFsNOaTxL4Q-eQ)
-- [golang 面试题：字符串转成 byte 数组，会发生内存拷贝吗？](https://mp.weixin.qq.com/s/d80m0hgoKcHfKp4ZXH1M4A)
-- [golang 面试题：翻转含有中文、数字、英文字母的字符串](https://mp.weixin.qq.com/s/OIRPOszH-rTJp03AeRgnRQ)
-- [golang 面试题：拷贝大切片一定比小切片代价大吗？](https://mp.weixin.qq.com/s/hPYdiHYRufimyKT4FcW4HA)
-- [golang 面试题：能说说 uintptr 和 unsafe.Pointer 的区别吗？](https://mp.weixin.qq.com/s/IkOwh9bh36vK6JgN7b3KjA)
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+
 
 ##### 如果你想每天学习一个知识点，关注我的【公】【众】【号】【小白 debug】。

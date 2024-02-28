@@ -174,3 +174,13 @@ bigcache 性能非常好，但也不是完全没有问题。比较明显的是�
 这就像我们做的 go/java 后端训练营，你不能要求它效果好，又要求它价格低。
 
 不管你是学生，还是工作了几年的程序员，如果你最近想换份工作，又对自己的实力不自信，可以考虑下我们[训练营](https://golangguide.top/%E8%AE%AD%E7%BB%83%E8%90%A5/%E4%BB%8B%E7%BB%8D.html)。
+
+
+# 相关文章
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
