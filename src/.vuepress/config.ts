@@ -103,6 +103,10 @@ export default defineUserConfig({
     tocPlugin({
       // 配置项
     }),
+    '@vuepress/google-analytics',
+    {
+      'ga': 'G-K56SJCYRN9' // UA-00000000-0
+    }
   ],
   theme,
 
