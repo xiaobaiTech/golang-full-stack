@@ -5,6 +5,7 @@ import theme from "./theme.js";
 import { seoPlugin } from "vuepress-plugin-seo2";
 import { pwaPlugin } from "vuepress-plugin-pwa2";
 
+
 export default defineUserConfig({
   base: "/",
 
@@ -99,17 +100,15 @@ export default defineUserConfig({
     seoPlugin({
       hostname: "https://golangguide.top",
       canonical: "https://golangguide.top",
+      autoDescription: true,
     }),
     tocPlugin({
       // 配置项
     }),
-    '@vuepress/google-analytics',
-    {
-      'ga': 'G-K56SJCYRN9' // UA-00000000-0
-    }
   ],
   theme,
 
   // Enable it with pwa
   // shouldPrefetch: false,
 });
+
