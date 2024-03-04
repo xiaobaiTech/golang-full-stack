@@ -37,7 +37,7 @@ categories: "图解网络"
 
 在`IP`层里，这个长度是`MTU`。
 
-那**MSS 和 MTU 是什么关系**呢？这个在[之前的文章](https://mp.weixin.qq.com/s/0H8WL6QeZ2VbO1hHPkn8Ug)里简单提到过。这里单独拿出来。
+那**MSS 和 MTU 是什么关系**呢？这个在[之前的文章](/计算机基础/网络基础/核心知识点/TCP粘包！数据包：我只是犯了每个数据包都会犯的错，硬核图解)里简单提到过。这里单独拿出来。
 
 ## MSS 是什么
 
@@ -204,7 +204,7 @@ $cat /proc/sys/net/ipv4/ip_no_pmtu_disc
 
 - [i/o timeout，希望你不要踩到这个 net/http 包的坑](https://golangguide.top/golang/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%8A%A8%E5%9B%BE%E5%9B%BE%E8%A7%A3%EF%BC%8CGMP%E9%87%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89P.html)
 
-- [硬核！漫画图解 HTTP 知识点+面试题](https://mp.weixin.qq.com/s/T41YBEmG4lkxokDLzRxVgA)
+- [硬核！漫画图解 HTTP 知识点+面试题](/计算机基础/网络基础/核心知识点/硬核！漫画图解HTTP知识点_面试题)
 - [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](https://mp.weixin.qq.com/s/PwIbKDTi0uSxhUWC56sJYg)
 - [硬核图解！30 张图带你搞懂！路由器，集线器，交换机，网桥，光猫有啥区别？](https://mp.weixin.qq.com/s/BJqp72EyEMahxi2XOfSrBQ)
 

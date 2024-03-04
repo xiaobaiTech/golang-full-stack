@@ -385,6 +385,6 @@ int udp_sendmsg()
 
 
 - [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](https://mp.weixin.qq.com/s/0H8WL6QeZ2VbO1hHPkn8Ug)
-- [硬核！漫画图解 HTTP 知识点+面试题](https://mp.weixin.qq.com/s/T41YBEmG4lkxokDLzRxVgA)
+- [硬核！漫画图解 HTTP 知识点+面试题](/计算机基础/网络基础/核心知识点/硬核！漫画图解HTTP知识点_面试题)
 
 - [硬核图解！30 张图带你搞懂！路由器，集线器，交换机，网桥，光猫有啥区别？](https://mp.weixin.qq.com/s/BJqp72EyEMahxi2XOfSrBQ)
