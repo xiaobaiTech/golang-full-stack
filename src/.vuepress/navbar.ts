@@ -155,6 +155,11 @@ export default navbar([
         link: '/golang/常用包大全'
       },
       {
+        text: "核心知识点",
+        icon: "codepen",
+        link: '/golang/面试题/核心知识点'
+      },
+      {
         text: "基础面试题",
         icon: "disease",
         link: '/golang/面试题/1.Go入门'
