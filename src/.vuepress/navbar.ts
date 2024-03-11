@@ -156,8 +156,8 @@ export default navbar([
       },
       {
         text: "核心知识点",
-        icon: "codepen",
-        link: '/golang/面试题/核心知识点'
+        icon: "house-laptop",
+        link: '/golang/核心知识点/'
       },
       {
         text: "基础面试题",
