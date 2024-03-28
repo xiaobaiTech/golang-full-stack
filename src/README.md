@@ -9,8 +9,8 @@ bgImageStyle:
 heroText: GolangGuide
 tagline: 这是一份关于Golang全栈开发的学习资料，面试必读。
 actions:
-  - text: Python 💡
-    link: ./python/
+  - text: 图解网络
+    link: ./计算机基础/网络基础/
     type: primary
   - text: Golang 💡
     link: ./golang/
