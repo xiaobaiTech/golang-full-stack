@@ -6,15 +6,18 @@ heroImage: /new_logo.png
 
 bgImageStyle:
   background-attachment: fixed
-heroText: GolangGuide
-tagline: 这是一份关于Golang全栈开发的学习资料，面试必读。
+heroText: GolangGuide.top
+tagline: golangguide.top | 这是一份关于Golang全栈开发的学习资料，面试必读。
 actions:
   - text: 图解网络
     link: ./计算机基础/网络基础/
     type: primary
-  - text: Golang 💡
+  - text: Golang
     link: ./golang/
     type: primary    
+  - text: Mysql
+    link: ./中间件/mysql/
+    type: primary     
   
 
 highlights:
