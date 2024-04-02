@@ -95,6 +95,20 @@ export default defineUserConfig({
 
       `,
     ],
+    [
+      'script',
+      {},
+      `
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-K56SJCYRN9"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K56SJCYRN9');
+      </script>
+      `
+    ],   
   ],
   plugins: [
     seoPlugin({
