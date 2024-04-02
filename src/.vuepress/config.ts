@@ -11,7 +11,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "golang全栈指南",
-  description: "超级好用的golang面试指南，面试前到golang guide补补",
+  description: "深入探索Golang全栈开发的世界，本网站提供了从基础到高级的全面学习资源，涵盖数据库、微服务、Kubernetes、Docker等关键技术，以及源码分析、开发工具和读书笔记等实用资料，旨在帮助开发者构建扎实的技术基础，掌握现代软件架构的核心原理。",
   bundler: viteBundler({
     viteOptions: {},
     vuePluginOptions: {},
@@ -25,12 +25,12 @@ export default defineUserConfig({
       {
         name: "keywords",
         content:
-          "面试, 程序员, golang, golang指南, mysql, redis, elastic search, kafka, rocketmq, 微服务, 分布式, Docker",
+          "Golang基础, Golang源码, 数据库原理, MySQL, ElasticSearch, 微服务架构, Kafka消息队列, Nginx服务器, Redis缓存, RocketMQ, Kubernetes, Docker容器化, k8s集群管理, CI/CD持续集成, Linux操作系统, DevOps文化, 分布式系统, 中间件技术, 开发工具集, Git版本控制, IDE集成开发环境, 源码阅读技巧, 读书笔记分享, 开源项目资源",
       },
     ],
     [
       "meta",
-      { name: "description", content: "你需要的关于 golang 全栈后端开发的所有信息，包括但不限于mysql, redis, elasticsearch，微服务，kafka, 计算机网络，操作系统等信息" },
+      { name: "description", content: "深入探索Golang全栈开发的世界，本网站提供了从基础到高级的全面学习资源，涵盖数据库、微服务、Kubernetes、Docker等关键技术，以及源码分析、开发工具和读书笔记等实用资料，旨在帮助开发者构建扎实的技术基础，掌握现代软件架构的核心原理。" },
     ],
     ["meta", { name: "author", content: "https://www.xiaobaidebug.top/" }],
 
