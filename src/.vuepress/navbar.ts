@@ -59,9 +59,9 @@ export default navbar([
     prefix: "/架构/",
     children: [
       {
-        text: "Docker",
+        text: "云原生",
         icon: "box",
-        link: '/架构/Docker/'
+        link: '/架构/云原生/'
       },
       {
         text: "分布式",
