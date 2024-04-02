@@ -3,8 +3,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { tocPlugin } from '@vuepress/plugin-toc'
 import theme from "./theme.js";
 import { seoPlugin } from "vuepress-plugin-seo2";
-import { pwaPlugin } from "vuepress-plugin-pwa2";
-
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   base: "/",
@@ -94,21 +93,7 @@ export default defineUserConfig({
       });
 
       `,
-    ],
-    [
-      'script',
-      {},
-      `
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-K56SJCYRN9"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-K56SJCYRN9');
-      </script>
-      `
-    ],   
+    ], 
   ],
   plugins: [
     seoPlugin({
@@ -118,6 +103,9 @@ export default defineUserConfig({
     }),
     tocPlugin({
       // 配置项
+    }),
+    googleAnalyticsPlugin({
+      id: 'G-K56SJCYRN9',
     }),
   ],
   theme,
