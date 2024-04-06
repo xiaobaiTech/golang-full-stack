@@ -117,3 +117,13 @@ k8s 可以将 pod 从某个 Node 调度到另一个 Node，还能以 pod 为单�
 - 文章通过怎么部署服务和怎么调用服务两个例子将这些组件串联了起来，方便大家加深理解。
 
 最后给大家留一个问题，我们提到 k8s 的时候，一般会提一下 [docker](https://golangguide.top/%E6%9E%B6%E6%9E%84/Docker/), 但为了避免大家混淆，我在写这篇文章的时候，只字不提 docker，你知道 **docker 和 k8s 之间是什么关系吗？**欢迎评论区聊聊。
+
+# 参考文章：
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+

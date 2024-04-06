@@ -86,3 +86,13 @@
 好了，如果你觉得这期文章对你有帮助，记得转发给你那不成器的兄弟。
 最后遗留一个问题， docker 大概是什么你是了解了，那你知道它和传统虚拟机的区别吗？
 如果你感兴趣，可以看下这篇[docker和传统虚拟机有什么区别](/架构/微服务/核心知识点/docker和传统虚拟机有什么区别)
+
+# 参考文章：
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+

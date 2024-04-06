@@ -131,3 +131,13 @@ https://github.com/alibaba/sentinel-golang
 
 - QPS 指“每秒查询数”，是程序员必知必会的内容。建议多了解你负责的项目的 qps，以防面试官一问你三不知。
 - 这篇文章介绍了代码实时计算 QPS 的实现细节，同时这也是著名的服务治理库 sentinel-golang 的实现原理，除了 golang 版本，它还有 java,cpp,js 版本的库，原理都大同小异，看完这篇文章等于一次性学了 4 个库，这波不亏。
+
+# 参考文章：
+- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+
+- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+
+- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+
+- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+
