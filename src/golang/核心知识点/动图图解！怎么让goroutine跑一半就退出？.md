@@ -392,8 +392,8 @@ func main() {
 
 <br>
 
-**点击**下方名片，关注公众号:【小白 debug】
-![](https://cdn.xiaobaidebug.top/1696069689495.png)
+关注公众号:【小白 debug】
+
 
 <br>
 

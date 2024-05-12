@@ -337,8 +337,8 @@ nc -p 6666 baidu.com 80
 
 ##### 别说了，一起在知识的海洋里呛水吧
 
-**点击**下方名片，关注公众号:【小白 debug】
-![](https://cdn.xiaobaidebug.top/1696069689495.png)
+关注公众号:【小白 debug】
+
 
 <br>
 

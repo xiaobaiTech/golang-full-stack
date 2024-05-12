@@ -33,7 +33,7 @@ type SliceHeader struct {
 
 ##### 关注公众号:【小白 debug】
 
-![](https://cdn.xiaobaidebug.top/1696069689495.png)
+
 
 ## 相关文章
 - [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
