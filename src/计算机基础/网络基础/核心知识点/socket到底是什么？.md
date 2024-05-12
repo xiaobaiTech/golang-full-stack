@@ -282,6 +282,3 @@ static inline struct tcp_sock *tcp_sk(const struct sock *sk)
 大家是希望看点体系化的内容吗？
 
 我们评论区聊聊。
-
-关注公众号:【小白 debug】
-![](https://cdn.xiaobaidebug.top/1696069689495.png)
