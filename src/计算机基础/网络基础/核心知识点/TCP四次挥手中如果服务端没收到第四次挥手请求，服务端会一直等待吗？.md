@@ -83,42 +83,9 @@ static int tcp_orphan_retries(struct sock *sk, int alive)
 
 <br>
 
-## 最后
-
-新的文章快写好了，就缺个开头了。
-
-![](https://cdn.xiaobaidebug.top/image-20220813115736303.png)
-
-**我有个不成熟的请求。**
-
-![](https://cdn.xiaobaidebug.top/u=2281575747,3550568508&fm=253&fmt=auto&app=120&f=JPEG.jpeg)
-
+<br>
 <br>
 
-**离开广东好长时间了，好久没人叫我靓仔了。**
-
-大家可以在**评论区**里，叫我一靓仔吗？
-
-我这么善良质朴的愿望，能被满足吗？
-
-如果实在叫不出口的话，能帮我点下右下角的**点赞和在看**吗？
-
-<br>
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-**点击**下方名片，关注公众号:【小白 debug】
-![](https://cdn.xiaobaidebug.top/1696069689495.png)
-
-<br>
-
-不满足于在留言区说骚话？
-
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" alt="" style="zoom:50%;" />
-
-![](https://cdn.xiaobaidebug.top/006APoFYly1g5q9gn2jipg308w08wqdi-20220806162638482.gif)
 
 ## 文章推荐：
 
