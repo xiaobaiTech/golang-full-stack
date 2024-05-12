@@ -5,8 +5,7 @@ tags:
 categories: "golang面试题"
 ---
 
-![img](https://cdn.xiaobaidebug.top/image/640-20210524195843699.png)
-
+![封面nil切片和空切片的区别](https://cdn.xiaobaidebug.top/1715521271870.webp)
 <!-- more -->
 
 # 问题
@@ -58,10 +57,11 @@ type SliceHeader struct {
 ```
 
 - nil 切片和空切片最大的区别在于**指向的数组引用地址是不一样的**。
-  ![img](https://cdn.xiaobaidebug.top/image/640.png)
+![](https://cdn.xiaobaidebug.top/1715521303529.webp)
+
 
 - **所有的空切片指向的数组引用地址都是一样的**
-  ![img](https://cdn.xiaobaidebug.top/image/640-20210524195829623.png)
+  ![](https://cdn.xiaobaidebug.top/1715521352139.webp)
 
 # 文章推荐：
 - [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
