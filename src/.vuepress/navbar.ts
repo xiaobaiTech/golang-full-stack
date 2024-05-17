@@ -2,7 +2,6 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/python/",
   // {
   //   text: 'Golang',
   //   // 这里是下拉列表展现形式。
