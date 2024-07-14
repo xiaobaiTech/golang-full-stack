@@ -61,7 +61,7 @@ type SliceHeader struct {
 
 
 - **所有的空切片指向的数组引用地址都是一样的**
-  ![](https://cdn.xiaobaidebug.top/1715521352139.webp)
+  ![](https://cdn.xiaobaidebug.top/1720707170771.png)
 
 # 文章推荐：
 - [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
