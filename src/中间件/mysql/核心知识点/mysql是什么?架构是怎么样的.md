@@ -321,3 +321,5 @@ excel 文件在磁盘上是个**xls** 文件，mysql 的数据表也类似，在
 - [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
 
 - [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+
+- [基于golang实现的图片翻译工具](https://www.photo-translate.top)
