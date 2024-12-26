@@ -1,5 +1,11 @@
 <template>
-  <div class="global-right-sidebar">
+  <!-- 添加移动端折叠按钮 -->
+  <div class="mobile-toggle" v-show="isMobile" @click="toggleMobileMenu">
+    <i :class="['fas', isExpanded ? 'fa-times' : 'fa-bars']"></i>
+  </div>
+
+  <!-- 修改原侧边栏,添加动态类 -->
+  <div class="global-right-sidebar" :class="{ 'mobile-expanded': isExpanded }">
     <!-- <div class="sidebar-item" @click="toggleToc">
       <i class="fas fa-list"></i>
       <span>目录</span>
@@ -66,13 +72,23 @@ export default {
           alt: '公众号二维码',
           text: '扫码关注公众号回复「网络」获取资料'
         }
-      }
+      },
+      isMobile: false,
+      isExpanded: false
     }
   },
   setup() {
     return {
       withBase
     }
+  },
+  mounted() {
+    // 检测是否为移动设备
+    this.checkMobile()
+    window.addEventListener('resize', this.checkMobile)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkMobile)
   },
   methods: {
     toggleToc() {
@@ -96,6 +112,15 @@ export default {
     },
     hideModal() {
       this.currentModal = null;
+    },
+    checkMobile() {
+      this.isMobile = window.innerWidth <= 719
+      if (!this.isMobile) {
+        this.isExpanded = false
+      }
+    },
+    toggleMobileMenu() {
+      this.isExpanded = !this.isExpanded
     }
   }
 }
@@ -112,13 +137,65 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   z-index: 100;
   padding: 10px 0;
+  transition: all 0.3s ease;
 }
 
-/* 添加媒体查询，在移动设备上隐藏侧边栏 */
+/* 修改移动端折叠按钮样式 */
+.mobile-toggle {
+  display: none;
+  position: fixed;
+  right: auto;
+  left: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--theme-color);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 101;
+  transition: all 0.3s ease;
+}
+
+.mobile-toggle i {
+  font-size: 16px;
+}
+
+/* 移动端样式 */
 @media (max-width: 719px) {
-  .global-right-sidebar {
-    display: none;
+  .mobile-toggle {
+    display: flex;
   }
+
+  .global-right-sidebar {
+    right: -100px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .global-right-sidebar.mobile-expanded {
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* 暗黑模式适配 */
+html[data-theme='dark'] .mobile-toggle {
+  background: var(--theme-color);
+  color: var(--bg-color-dark);
+}
+
+/* 添加动画效果 */
+.mobile-toggle:hover {
+  transform: scale(1.1);
+}
+
+.mobile-toggle:active {
+  transform: scale(0.95);
 }
 
 .sidebar-item {
@@ -141,7 +218,7 @@ export default {
   margin-bottom: 4px;
 }
 
-/* 暗黑模式样式 */
+/* 暗黑模式样�� */
 html[data-theme='dark'] .global-right-sidebar {
   background: var(--bg-color-dark);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);

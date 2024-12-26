@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94c77ee9-e5a7-4545-8a34-e24704b03367" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.vuepress/components/GlobalRightSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/.vuepress/components/GlobalRightSidebar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735195611420</updated>
       <workItem from="1735195612605" duration="1617000" />
-      <workItem from="1735199297355" duration="2177000" />
+      <workItem from="1735199297355" duration="2778000" />
     </task>
     <servers />
   </component>
