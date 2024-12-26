@@ -114,6 +114,13 @@ export default {
   padding: 10px 0;
 }
 
+/* 添加媒体查询，在移动设备上隐藏侧边栏 */
+@media (max-width: 719px) {
+  .global-right-sidebar {
+    display: none;
+  }
+}
+
 .sidebar-item {
   padding: 10px 15px;
   cursor: pointer;
