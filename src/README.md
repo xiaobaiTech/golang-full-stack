@@ -14,10 +14,10 @@ actions:
     type: primary
   - text: Golang
     link: ./golang/
-    type: primary    
+    type: primary  
   - text: Mysql
     link: ./中间件/mysql/
-    type: primary     
+    type: primary   
   
 
 highlights:
@@ -34,7 +34,7 @@ highlights:
     highlights:
       - title: 全网同名（公众号/抖音/bilibili/小红书）：小白debug。
       - title: 前字节跳动高级研发工程师。
-      - title: 全网10w+粉丝博主。
+      - title: 全网50w+粉丝博主。
 
   - header: 网站特色
     image: /assets/image/poetry.png
@@ -46,7 +46,7 @@ highlights:
         icon: clipboard-check
         details: 语法、标准库、最佳实践、常见问题
         link: /golang/学习路线
-        
+  
 
       - title: 时下最新的架构知识
         icon: box-archive

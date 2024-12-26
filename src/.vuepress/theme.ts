@@ -89,7 +89,7 @@ export default hopeTheme({
       vuePlayground: true,
     },
     components: {
-      components: ["Badge", "BiliBili"],
+      components: ["Badge", "BiliBili", "GlobalRightSidebar"],
       rootComponents: {
         notice: [
           {
@@ -168,5 +168,10 @@ export default hopeTheme({
     //     ],
     //   },
     // },
+  },
+
+  layout: {
+    // 启用右侧边栏
+    enableRightSidebar: true
   },
 });
