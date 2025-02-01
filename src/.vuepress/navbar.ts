@@ -134,6 +134,11 @@ export default navbar([
         icon: "rocket",
         link: '/中间件/rocketmq/'
       },
+      {
+        text: "HDFS",
+        icon: "rocket",
+        link: '/中间件/hdfs/'
+      },
     ],
   },
   {
