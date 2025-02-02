@@ -80,7 +80,6 @@ HDFS, 全名 Hadoop Distributed File System，是大数据领域常用的分布�
 
 ![可以通过CLI和API访问hdfs](https://cdn.xiaobaidebug.top/1738382666332.jpeg)
 
-
 ## DataNode 是什么
 
 牛马 **DataNode** 负责实际存储数据，很辛苦，但它的工作确实没什么技术含量，写坏了就用另外一块新的 DataNode 顶上。主打一个**你不干，有的是 DataNode 愿意干**。存储的数据量大了，就多加几个 DataNode。
@@ -137,11 +136,11 @@ HDFS, 全名 Hadoop Distributed File System，是大数据领域常用的分布�
 
 想必大家也发现了，NameNode 是 HDFS 集群的核心，存在**单点问题**，要是崩了，那集群就没法对外提供服务了。
 
-所以为了保证高可用，我们可以为 NameNode 配一个**备用 NameNode， 也就是 SecondaryNameNode**，平时主 NameNode 负责对外提供读写操作，备用 NameNode 只**同步** NameNode 的数据。
+所以为了保证高可用，我们可以为 NameNode 配一个**备用 NameNode， 也就是 Standby NameNode**，平时主 NameNode 负责对外提供读写操作，备用 NameNode 只**同步** NameNode 的数据。
 
 一旦 NameNode 挂了，备用 NameNode 就能立马**顶上**。保证了集群**高可用**。
 
-![SecondaryNameNode是什么](https://cdn.xiaobaidebug.top/1738382832217.jpeg)
+![备用namenode](https://cdn.xiaobaidebug.top/1738461877885.jpeg)
 
 ## 可扩展
 
@@ -214,7 +213,7 @@ HDFS, 全名 Hadoop Distributed File System，是大数据领域常用的分布�
 
 ## 总结
 
-\- 你可以将 HDFS 当做 **应用服务**和**多个服务器文件系统**的中间层，帮应用屏蔽掉背后的多个服务器，从多个服务器上读写文件数据，
+- 你可以将 HDFS 当做 **应用服务**和**多个服务器文件系统**的中间层，帮应用屏蔽掉背后的多个服务器，从多个服务器上读写文件数据，
 
 - HDFS 会将文件分为多个数据块,并给数据块配备多个副本，有效利用磁盘空间的同时，还提升了数据可靠性。
 - HDFS 将集群分为 NameNode 和 DataNode 两部分，NameNode 负责管理文件元数据，DataNode 负责正在存储数据块。
