@@ -208,7 +208,7 @@ no_tcp_socket:
 
 远端已经`close()`了`socket`，此时本端还尝试发数据给远端。那么远端就会回一个 RST。
 
-![close()触发TCP四次挥手](<https://cdn.xiaobaidebug.top/image/close()触发TCP四次挥手5-20210828083457512.png>)
+![close()触发TCP四次挥手](https://cdn.xiaobaidebug.top/1674689847076.png)
 
 大家知道，TCP 是**全双工通信**，意思是发送数据的同时，还可以接收数据。
 
