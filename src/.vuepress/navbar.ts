@@ -136,7 +136,7 @@ export default navbar([
       },
       {
         text: "HDFS",
-        icon: "rocket",
+        icon: "hdd",
         link: '/中间件/hdfs/'
       },
     ],
