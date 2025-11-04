@@ -44,7 +44,7 @@
     </a>
     <a class="sidebar-item" href="https://www.niumianoffer.com/?ref=gxzingpx" target="_blank">
       <i class="fas fa-robot"></i>
-      <span>AI牛面试</span>
+      <span>AI牛面</span>
     </a>
   </div>
 
