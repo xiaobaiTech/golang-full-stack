@@ -42,6 +42,10 @@
       <i class="fab fa-youtube"></i>
       <span>看视频</span>
     </a>
+    <a class="sidebar-item" href="https://www.niumianoffer.com/?ref=gxzingpx" target="_blank">
+      <i class="fas fa-robot"></i>
+      <span>AI牛面试</span>
+    </a>
   </div>
 
   <!-- 通用弹窗组件 -->
