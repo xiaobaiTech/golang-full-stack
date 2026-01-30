@@ -2,7 +2,6 @@ import { defineUserConfig } from "vuepress";
 import { viteBundler } from '@vuepress/bundler-vite'
 import { tocPlugin } from '@vuepress/plugin-toc'
 import theme from "./theme.js";
-import { seoPlugin } from "vuepress-plugin-seo2";
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import viteCompression from 'vite-plugin-compression'
 import viteImagemin from 'vite-plugin-imagemin'
@@ -76,11 +75,6 @@ export default defineUserConfig({
     ["meta", { name: "theme-color", content: "#1755F4" }],
   ],
   plugins: [
-    seoPlugin({
-      hostname: "https://golangguide.top",
-      canonical: "https://golangguide.top",
-      autoDescription: true,
-    }),
     tocPlugin({
       // 配置项
     }),

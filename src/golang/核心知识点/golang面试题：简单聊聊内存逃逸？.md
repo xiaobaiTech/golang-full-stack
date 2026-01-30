@@ -1,7 +1,12 @@
 ---
 title: golang面试题：简单聊聊内存逃逸？
 date: 2020-05-12 22:57:55
+description: 深入解析Golang内存逃逸机制，通过代码示例演示什么情况变量会逃逸到堆上，以及如何使用gcflags进行逃逸分析。
+keywords: golang内存逃逸, go逃逸分析, go堆栈分配, golang面试题
 tags:
+  - Golang
+  - 内存管理
+  - 面试题
 categories: "golang面试题"
 ---
 

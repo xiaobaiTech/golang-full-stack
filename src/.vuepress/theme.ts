@@ -103,6 +103,11 @@ export default hopeTheme({
       rss: true,
     },
 
+    seo: {
+      canonical: "https://golangguide.top",
+      autoDescription: true,
+    },
+
     sitemap: {
       changefreq: "weekly",
     },
