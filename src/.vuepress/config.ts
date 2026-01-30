@@ -93,6 +93,14 @@ export default defineUserConfig({
       });
 
       `,
+    ],
+    [
+      "script",
+      {
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5798115398774565",
+        crossorigin: "anonymous",
+      },
     ], 
   ],
   plugins: [
