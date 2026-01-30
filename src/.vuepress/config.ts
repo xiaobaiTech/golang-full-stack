@@ -4,6 +4,8 @@ import { tocPlugin } from '@vuepress/plugin-toc'
 import theme from "./theme.js";
 import { seoPlugin } from "vuepress-plugin-seo2";
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import viteCompression from 'vite-plugin-compression'
+import viteImagemin from 'vite-plugin-imagemin'
 
 export default defineUserConfig({
   base: "/",
@@ -12,13 +14,29 @@ export default defineUserConfig({
   title: "golang全栈指南",
   description: "深入探索Golang全栈开发的世界，本网站提供了从基础到高级的全面学习资源，涵盖数据库、微服务、Kubernetes、Docker等关键技术，以及源码分析、开发工具和读书笔记等实用资料，旨在帮助开发者构建扎实的技术基础，掌握现代软件架构的核心原理。",
   bundler: viteBundler({
-    viteOptions: {},
+    viteOptions: {
+      plugins: [
+        viteCompression({ algorithm: 'brotliCompress' }),
+        viteCompression({ algorithm: 'gzip' }),
+        viteImagemin({
+          gifsicle: { optimizationLevel: 3 },
+          mozjpeg: { quality: 75 },
+          pngquant: { quality: [0.6, 0.8] },
+          svgo: {}
+        })
+      ]
+    },
     vuePluginOptions: {},
   }),
     head: [
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true }],
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" }],
+    ["link", { rel: "dns-prefetch", href: "https://cdn.xiaobaidebug.top" }],
+    ["link", { rel: "preconnect", href: "https://cdn.xiaobaidebug.top", crossorigin: true }],
+    ["link", { rel: "alternate", type: "application/rss+xml", title: "RSS", href: "/feed.xml" }],
+    ["link", { rel: "alternate", hreflang: "zh-CN", href: "https://golangguide.top/" }],
+    ["link", { rel: "preload", as: "image", href: "/new_logo.png" }],
     [
       "meta",
       {
@@ -37,25 +55,15 @@ export default defineUserConfig({
     ["meta", { property: "og:image", content: "https://golangguide.top/new_logo.png" }],
     ["meta", { name: "og:image:secure_url", content: "https://golangguide.top/new_logo.png" }],
     ["meta", { name: "og:url", content: "https://golangguide.top/" }],
+    ["meta", { property: "og:locale", content: "zh_CN" }],
+    ["meta", { property: "og:type", content: "website" }],
 
-    ["meta", { property: "og:title", content: "欢迎来到 golangguide - 你需要的关于 golang 全栈后端开发的所有信息，包括但不限于mysql, redis, elasticsearch，微服务，kafka等信息" }],
-    [
-      "meta",
-      {
-        name: "og:description",
-        content: "golangguide Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and hyperchains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.",
-      },
-    ],
+    ["meta", { property: "og:title", content: "golang全栈指南 - 数据库/微服务/Kubernetes/Docker 等全站资源" }],
+    ["meta", { name: "og:description", content: "系统化学习 Golang 全栈：数据库、微服务、Kubernetes、Docker、CI/CD、分布式与中间件等核心知识与实践。" }],
     ["meta", { name: "twitter:card", content: "summary" }],
-    ["meta", { name: "twitter:title", content: "Welcome to our Docs - All information you need about golangguide and ZK Stack" }],
-    [
-      "meta",
-      {
-        name: "twitter:description",
-        content: "golangguide Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and hyperchains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.",
-      },
-    ],
-    ["meta", { name: "twitter:image:alt", content: "golangguide — Accelerating the mass adoption of crypto for personal sovereignty" }],
+    ["meta", { name: "twitter:title", content: "golang全栈指南" }],
+    ["meta", { name: "twitter:description", content: "Golang 全栈开发从基础到架构的系统资源集合。" }],
+    ["meta", { name: "twitter:image:alt", content: "golangguide" }],
 
     ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }],
     ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
@@ -66,42 +74,6 @@ export default defineUserConfig({
     ["meta", { name: "msapplication-TileColor", content: "#1E69FF" }],
     ["meta", { name: "msapplication-config", content: "/browserconfig.xml" }],
     ["meta", { name: "theme-color", content: "#1755F4" }],
-
-    [
-      "script",
-      {},
-      `
-      window.addEventListener('load', function() {
-        let contributors = document.querySelectorAll('.contributor');
-        let contributorArr = Array.from(contributors);
-        let topFive = contributorArr.slice(0, 5);
-      
-        topFive.forEach(function(contributor) {
-          contributor.textContent = contributor.textContent.replace(',', '');
-        });
-      
-        let lastComma = contributorArr[4];
-        lastComma.textContent = lastComma.textContent.replace(',', '');
-      
-        let updatedList = topFive.map(function(contributor) {
-          return contributor.textContent;
-        }).join(', ');
-          
-        let contributorsDiv = document.querySelector('.contributors');
-        contributorsDiv.innerHTML = '<span class="label">Contributors: </span>' + updatedList;
-      
-      });
-
-      `,
-    ],
-    [
-      "script",
-      {
-        async: true,
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5798115398774565",
-        crossorigin: "anonymous",
-      },
-    ], 
   ],
   plugins: [
     seoPlugin({
@@ -112,13 +84,10 @@ export default defineUserConfig({
     tocPlugin({
       // 配置项
     }),
-    googleAnalyticsPlugin({
-      id: 'G-K56SJCYRN9',
-    }),
+    ...(process.env.NODE_ENV === 'production' ? [googleAnalyticsPlugin({ id: 'G-K56SJCYRN9' })] : []),
   ],
   theme,
 
   // Enable it with pwa
-  // shouldPrefetch: false,
+  shouldPrefetch: false,
 });
-

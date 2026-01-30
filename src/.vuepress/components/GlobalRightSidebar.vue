@@ -1,11 +1,11 @@
 <template>
   <!-- 添加移动端折叠按钮 -->
-  <div class="mobile-toggle" v-show="isMobile" @click="toggleMobileMenu">
+  <div v-if="shouldRender()" class="mobile-toggle" v-show="isMobile" @click="toggleMobileMenu">
     <i :class="['fas', isExpanded ? 'fa-times' : 'fa-bars']"></i>
   </div>
 
   <!-- 修改原侧边栏,添加动态类 -->
-  <div class="global-right-sidebar" :class="{ 'mobile-expanded': isExpanded }">
+  <div v-if="shouldRender()" class="global-right-sidebar" :class="{ 'mobile-expanded': isExpanded }">
     <!-- <div class="sidebar-item" @click="toggleToc">
       <i class="fas fa-list"></i>
       <span>目录</span>
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import { withBase } from 'vuepress/client'
+import { withBase, useRoute } from 'vuepress/client'
 
 export default {
   name: 'GlobalRightSidebar',
@@ -82,8 +82,10 @@ export default {
     }
   },
   setup() {
+    const route = useRoute()
     return {
-      withBase
+      withBase,
+      route
     }
   },
   mounted() {
@@ -95,6 +97,11 @@ export default {
     window.removeEventListener('resize', this.checkMobile)
   },
   methods: {
+    shouldRender() {
+      const path = this.route.path || ''
+      const allow = ['/golang/', '/中间件/', '/架构/', '/计算机基础/', '/训练营/']
+      return allow.some(p => path.startsWith(p))
+    },
     toggleToc() {
       // 切换目录显示
       const toc = document.querySelector('.toc-wrapper');
