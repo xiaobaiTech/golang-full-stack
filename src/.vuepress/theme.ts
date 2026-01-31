@@ -84,7 +84,7 @@ export default hopeTheme({
       vuePlayground: true,
     },
     components: {
-      components: ["Badge", "BiliBili", "GlobalRightSidebar"],
+      components: ["Badge", "BiliBili"],
       rootComponents: {
         notice: [
           {
